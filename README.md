@@ -19,33 +19,42 @@ A **Django-based FAQ Management System** that supports **multilingual FAQs** wit
 
 
 ## **Clone the Repository**  
-
+```
 git clone https://github.com/GayathriManchikanti/BackendFAQProject.git
 cd FAQ_Project
+```
 
 ## **Apply Migrations & Create Superuser**
-
+```
 python manage.py migrate
 python manage.py createsuperuser
+```
 
 ## **Run the server**
-
+```
 python manage.py runserver
-
+```
 ## API Endpoints
 ### ** Get All FAQs (Default Language: English)**
-
+```
 GET /api/faqs/
+```
 ### **Get FAQs in a Specific Language**
-
+```
 GET /api/faqs/?lang=hi
+```
 ### **Create a New FAQ**
-
+```
 POST /api/faqs/
-
-##Running Tests
+```
+### **Admin**
+```
+admin/
+```
+## **Running Tests**
+```
 pytest FAQ/tests/
-
+```
 
 
 
